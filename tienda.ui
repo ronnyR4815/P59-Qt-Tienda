@@ -50,7 +50,7 @@
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QLineEdit" name="lineEdit"/>
+           <widget class="QLineEdit" name="out_cedula"/>
           </item>
           <item row="1" column="0">
            <widget class="QLabel" name="label_2">
@@ -60,7 +60,7 @@
            </widget>
           </item>
           <item row="1" column="1">
-           <widget class="QLineEdit" name="lineEdit_2"/>
+           <widget class="QLineEdit" name="out_nombre"/>
           </item>
           <item row="2" column="0">
            <widget class="QLabel" name="label_3">
@@ -70,7 +70,7 @@
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QLineEdit" name="lineEdit_3"/>
+           <widget class="QLineEdit" name="out_telefono"/>
           </item>
           <item row="3" column="0">
            <widget class="QLabel" name="label_4">
@@ -80,7 +80,7 @@
            </widget>
           </item>
           <item row="3" column="1">
-           <widget class="QLineEdit" name="lineEdit_4"/>
+           <widget class="QLineEdit" name="out_email"/>
           </item>
           <item row="4" column="0">
            <widget class="QLabel" name="label_5">
@@ -90,7 +90,7 @@
            </widget>
           </item>
           <item row="4" column="1">
-           <widget class="QPlainTextEdit" name="plainTextEdit"/>
+           <widget class="QPlainTextEdit" name="out_direccion"/>
           </item>
          </layout>
         </widget>
@@ -121,7 +121,7 @@
            </widget>
           </item>
           <item row="0" column="1">
-           <widget class="QComboBox" name="comboBox"/>
+           <widget class="QComboBox" name="in_producto"/>
           </item>
           <item row="1" column="0">
            <widget class="QLabel" name="label_7">
@@ -141,14 +141,14 @@
            </widget>
           </item>
           <item row="2" column="1">
-           <widget class="QLabel" name="label_9">
+           <widget class="QLabel" name="out_precio">
             <property name="text">
              <string>0.00</string>
             </property>
            </widget>
           </item>
           <item row="4" column="1">
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="btn_agregar">
             <property name="text">
              <string>Agregar</string>
             </property>
@@ -170,7 +170,7 @@
          </property>
          <layout class="QVBoxLayout" name="verticalLayout">
           <item>
-           <widget class="QTableWidget" name="tableWidget"/>
+           <widget class="QTableWidget" name="out_detalle"/>
           </item>
          </layout>
         </widget>
@@ -202,7 +202,13 @@
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="QLabel" name="label_13">
+              <widget class="QLabel" name="out_subtotal">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
                <property name="minimumSize">
                 <size>
                  <width>50</width>
@@ -222,7 +228,7 @@
               </widget>
              </item>
              <item row="1" column="1">
-              <widget class="QLabel" name="label_14">
+              <widget class="QLabel" name="out_IVA">
                <property name="text">
                 <string>0.00</string>
                </property>
@@ -230,13 +236,20 @@
              </item>
              <item row="2" column="0">
               <widget class="QLabel" name="label_12">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <weight>75</weight>
+                 <bold>true</bold>
+                </font>
+               </property>
                <property name="text">
                 <string>TOTAL:</string>
                </property>
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QLabel" name="label_15">
+              <widget class="QLabel" name="out_total">
                <property name="text">
                 <string>0.00</string>
                </property>

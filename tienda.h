@@ -3,6 +3,8 @@
 
 #include <QMainWindow>
 
+#include "producto.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class Tienda; }
 QT_END_NAMESPACE
@@ -17,5 +19,7 @@ public:
 
 private:
     Ui::Tienda *ui;
+    QList<Producto*> m_productos;
+    void cargarProductos();
 };
 #endif // TIENDA_H

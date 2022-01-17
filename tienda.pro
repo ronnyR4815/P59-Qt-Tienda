@@ -10,9 +10,11 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
+    producto.cpp \
     tienda.cpp
 
 HEADERS += \
+    producto.h \
     tienda.h
 
 FORMS += \
