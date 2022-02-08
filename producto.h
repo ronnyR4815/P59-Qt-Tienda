@@ -12,8 +12,10 @@ public:
 
     int codigo() const;
     void setCodigo(int newCodigo);
+
     const QString &nombre() const;
     void setNombre(const QString &newNombre);
+
     float precio() const;
     void setPrecio(float newPrecio);
 
